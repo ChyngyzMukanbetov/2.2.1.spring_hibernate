@@ -16,8 +16,8 @@ public class Car {
     @Column
     private int series;
 
-    @OneToOne(optional = true, mappedBy = "car")
-    private User user;
+//    @OneToOne(optional = true, mappedBy = "car")
+//    private User user;
 
     public Car () {
 
@@ -52,11 +52,11 @@ public class Car {
         this.id = id;
     }
 
-    public User getUser() {
-        return user;
-    }
-
-    public void setUser(User user) {
-        this.user = user;
-    }
+//    public User getUser() {
+//        return user;
+//    }
+//
+//    public void setUser(User user) {
+//        this.user = user;
+//    }
 }
