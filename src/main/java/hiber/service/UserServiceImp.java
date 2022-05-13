@@ -19,8 +19,15 @@ public class UserServiceImp implements UserService {
    @Override
    public void add(User user, Car car) {
       user.setCar(car);
-      userDao.add(user, car);
+      userDao.add(user);
    }
+
+//   @Transactional
+//   @Override
+//   public void add(User user, Car car) {
+//      user.setCar(car);
+//      userDao.add(user, car);
+//   }
 
    @Override
    public void add(User user) {
